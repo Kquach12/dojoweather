@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="top">
+        <div class="navbar">
+            <h1>DojoWeather</h1>
+            <span class="city">
+            <ul>
+                <li onclick="changingCity()">Burbank</li>
+                <li onclick="changingCity()">Chicago</li>
+                <li onclick="changingCity()">Dallas</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h2>San Jose</h2>
+            <p>
+                show temperature in 
+                <select name="unit" id="unit" onchange="changeUnit(this)">
+                    <option value="celsius">C</option>
+                    <option value="farenheit">F</option>
+                </select>
+            </p>
+        </div>
+        <div class="forecast">
+            <div class="weather">
+                <h3>Today</h3>
+                <img src="assets\some_rain.png" alt="rain">
+                <p>some rain</p>
+                <span class="temperature">
+                    <h3 class= "degrees" id="hot">24</h3>
+                    <h3 class= "degrees">18</h3>
+                </span>
+            </div>
+            <div class="weather">
+                <h3>Tomorrow</h3>
+                <img src="assets\some_sun.png" alt="sun">
+                <p>some sun</p>
+                <span class="temperature">
+                    <h3 class= "degrees" id="hot">27</h3>
+                    <h3 class= "degrees">19</h3>
+                </span>
+            </div>
+            <div class="weather">
+                <h3>Friday</h3>
+                <img src="assets\some_clouds.png" alt="clouds">
+                <p>some clouds</p>
+                <span class="temperature">
+                    <h3 class= "degrees" id="hot">21</h3>
+                    <h3 class= "degrees">16</h3>
+                </span>
+            </div>
+            <div class="weather">
+                <h3>Saturday</h3>
+                <img src="assets\some_sun.png" alt="sun">
+                <p>some sun</p>
+                <span class="temperature">
+                    <h3 class= "degrees" id="hot">26</h3>
+                    <h3 class= "degrees">21</h3>
+                </span>
+            </div>
+        </div>
+        <div class="cookies">
+            <img src="assets\cookie.png" alt="cookie">
+            <span>
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+            </span>
+            <button onclick="acceptCookie()">I Accept</button>
+        </div>
+    </div>
+</body>
+</html>
